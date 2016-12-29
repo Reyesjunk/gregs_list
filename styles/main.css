@@ -1,0 +1,137 @@
+* {
+	font-family: sans-serif;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 80px;
+}
+
+/*these selectors have to do with the nav bar*/
+
+.name {
+	display: inline;
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+header {
+	width: 100%;
+	background-color: whitesmoke;
+	border: 1px solid gainsboro;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+}
+
+.top-nav {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.nav-link {
+	font-size: 18px;
+	padding: 0 6px;
+}
+nav ul {
+	display: inline;
+	list-style: none;
+
+}
+
+nav li {
+	display: inline;
+	padding-right:  10px;
+	float: right;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/*these selectors have to do with the search bar*/
+
+form {
+	padding-bottom:  30px;
+}
+
+input {
+	width: 300px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.search button {
+	font-size: 17px;
+	height: 30px;
+	border-radius: 3px;
+	border: 1px solid gainsboro;
+	vertical-align: bottom;
+	padding: 0;
+
+}
+.magnifying-glass {
+	height: 100%
+}
+/*these selectors have to do with the prev/next nav items*/
+
+.pages {
+	display: inline-block;
+	border: 1px solid gainsboro;
+	margin-bottom: 30px;
+	border-radius:  4px;
+	font-size: 0;
+}
+.prev-button, .page-info, .next-button {
+	display: inline-block;
+	font-size: 16px;
+	padding: 4px 7px;
+}
+
+.prev:hover, .next:hover {
+	background-color: gainsboro;
+}
+
+.prev-button {
+	border-right: 1px solid gainsboro;
+
+}
+.page-info {}
+
+.next-button {
+	border-left: 1px solid gainsboro
+}
+
+.prev-button::before {
+	content: "<";
+	margin-right: 5px;
+}
+
+.next-button::after {
+	content: ">";
+	margin-left: 5px
+}
+
+/*these selectors have to do with the results*/
+.results {
+	padding: 0;
+}
+.results li {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.date, .company {
+	color: grey;
+}
+.position {
+	font-weight: bold;
+	color: blue;
+}
+
+
